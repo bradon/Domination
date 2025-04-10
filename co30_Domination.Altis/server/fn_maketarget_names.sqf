@@ -41,5 +41,8 @@ private _cr = call {
 		_dtar enableSimulationGlobal false;
 	};
 } forEach ((allMissionObjects "LocationCityCapital_F") select {(str _x) find "d_target_" == 0});
+
+d_target_names sort true;
+
 diag_log ["DOM number of main targets found:", count d_target_names];
 __TRACE_1("All targets found","d_target_names")
